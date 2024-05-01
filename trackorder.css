@@ -1,0 +1,43 @@
+.pink-line {
+    border: 0;
+    height: 2px;
+    background-color: pink;
+}
+
+.container {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-div {
+    height: 100px;
+    width: 50%;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.right-div {
+    width: 50%;
+    height: 100px;
+    float: right;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.tag-container {
+    display: inline-block;
+}
+
+.tag-container a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}

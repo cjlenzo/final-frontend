@@ -1,1 +1,66 @@
-"# final-frontend" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <hr class="pink-line">
+    <div class="container clearfix">
+        <div class = "left-div">
+            <img src = "Final Project.jpg" height = "100px">
+        </div>
+        <div class = "right-div">
+            <div class = "tag-container">
+                <a href = "trackorder.html">Track Order</a>
+                <a href = "#">Help</a>
+                <a href = "login.html">Account</a>
+                <a href = "#" id = "basket-link">Basket (0)</a>
+            </div>
+        </div>
+    </div>
+
+    </br>
+
+    <div class = "container2 clearfix">
+        <div class = "left-div2">
+            <h2>Send her flowers!</h2>
+            <p>Shop multiple flowers for different occasions below!</p>
+        </div>
+        <div class = "right-div2">
+            <img src = "Home Page Flowers.jpg" class = "flower-image">
+        </div>
+    </div>
+
+    </br>
+
+    <div class = "container clearfix">
+        <div class = "left-div">
+            <div class = "filter-container">
+                <p><b>Filter by: </b></p>
+            </div>
+        </div>
+        <div class = "right-div">
+            <div class = "sort-container">
+                <p><b>Sort: </b></p>
+                <select id = "sort-direction">
+                    <option value = "">None</option>
+                    <option value = "asc">Price: Low to High</option>
+                    <option value = "desc">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flowers">
+        <div id = "list" class = "cards">
+
+        </div>
+    </div>
+
+    <script src = "host.js"></script>
+    <script src = "home.js"></script>
+</body>
+</html>

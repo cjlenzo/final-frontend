@@ -1,0 +1,148 @@
+.pink-line {
+    border: 0;
+    height: 2px;
+    background-color: pink;
+}
+
+.container {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-div {
+    height: auto;
+    width: 50%;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.right-div {
+    width: 50%;
+    height: auto;
+    float: right;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.tag-container {
+    display: inline-block;
+}
+
+
+.container2 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.discount-box {
+    width: 40%;
+    margin: 0 auto;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#logging {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 240px;
+}
+
+
+.container3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-div2, .right-div2 {
+    box-sizing: border-box; 
+}
+
+.left-div2 {
+    width: 15%;
+    text-align: center;
+}
+
+.left-div2 img {
+    width: 100%;
+    height: auto;
+}
+
+.right-div2 {
+    width: 80%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.fName {
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.fName input {
+    width: 90%;
+    height: 30px;
+}
+
+.lName {
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.lName input {
+    width: 90%;
+    height: 30px;
+}
+
+.cButton {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    width: 240px;
+}

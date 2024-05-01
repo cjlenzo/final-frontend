@@ -1,0 +1,93 @@
+.pink-line {
+    border: 0;
+    height: 2px;
+    background-color: pink;
+}
+
+.container {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-div {
+    height: 100px;
+    width: 50%;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.right-div {
+    width: 50%;
+    height: 100px;
+    float: right;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.tag-container {
+    display: inline-block;
+}
+
+.tag-container a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left-div2, .right-div2 {
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.left-div2 {
+    width: 50%;
+    padding: 15px; /* Add padding to match the box model */
+    text-align: center;
+}
+
+.left-div2 img {
+    width: 100%;
+    height: auto;
+}
+
+.right-div2 {
+    width: 50%;
+}
+
+.container3 {
+    width: 100%;
+    text-align: left;
+}
+
+/* Container styles */
+.purchase-option {
+    display: inline-block;
+    border: 2px solid gray; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Container styles when radio button is checked */
+input[type="radio"]:checked + label {
+    border-color: #00ff00; /* Green border when selected */
+}
+
+/* Container styles when radio button is hovered */
+.purchase-option:hover {
+    border-color: #999; /* Darker gray border on hover */
+}

@@ -1,0 +1,114 @@
+.pink-line {
+    border: 0;
+    height: 2px;
+    background-color: pink;
+}
+
+.container {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-div {
+    height: 100px;
+    width: 50%;
+    float: left;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.right-div {
+    width: 50%;
+    height: 100px;
+    float: right;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.tag-container {
+    display: inline-block;
+}
+
+.tag-container a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left-div2, .right-div2 {
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.left-div2 {
+    width: 60%;
+    padding: 15px; /* Add padding to match the box model */
+    background-color: pink;
+    text-align: center;
+}
+
+.right-div2 {
+    width: 40%;
+}
+
+.flower-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.flowers {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    margin-right: 5%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+}
+  
+.card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.flower-image {
+    width: 100%;
+    height: auto;
+}
+
+.filter-container, .sort-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-container p, .sort-container p {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.filter-container select, .sort-container select {
+    margin-left: 5px;
+}
