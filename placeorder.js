@@ -113,7 +113,6 @@ async function sendOrderData(orderData) {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
-            // "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify(orderData)
     };
@@ -123,8 +122,8 @@ async function sendOrderData(orderData) {
         let response = await fetch(`${host}/orders`, request);
         if (response.status === 200) {
             alert("Order placed successfully!");
-            window.location.href = "home.html"
-            // Redirect or perform any other actions upon successful order placement
+            localStorage.getItem("basket");
+            window.location.href = "home.html";
         } else {
             console.log(`Failed to place order. Status: ${response.status}`);
             alert("Failed to place order. Please try again later.");

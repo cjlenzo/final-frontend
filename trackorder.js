@@ -46,7 +46,7 @@ async function displayOrders() {
                 let row = document.createElement("tr");
                 row.innerHTML = `
                     <td>${flower.name}</td>
-                    <td>$${flower.cost}</td>
+                    <td>$${order.totalCost}</td>
                     <td>${order.recipientName}</td>
                     <td>${order.status}</td>
                 `;
